@@ -47,7 +47,7 @@ section {
   background-image: url('./images/squid.jpg');
   background-size: cover;
   height: 1200px;
-  border-bottom: 4px white solid;
+  border-bottom: 4px black solid;
 }
 
 .title {
@@ -57,6 +57,18 @@ section {
   font-size: 140px;
   z-index: 3;
 }
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 88px;
+  }
+
+  .intro-2 {
+    height: 1600px;
+    overflow-y: hidden;
+  }
+}
+
+
 
 .intro-2 {
   display: flex;
@@ -64,7 +76,9 @@ section {
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
-  border-bottom: 4px white solid;
+  border-bottom: 4px black solid;
+  height: 1200px;
+  overflow-y: hidden;
 }
 
 .overlay {
@@ -75,18 +89,43 @@ section {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#love-title {
+
+.text {
   position: absolute;
-  top: 430px;
-  left: 140px;
+  height: inherit;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#love-title {
+}
+
+@media screen and (max-width: 600px) {
+  #love-title {
+    left: 10px;
+  }
+
+  #last {
+    display: none;
+  }
 }
 
 
 .friends {
-  width: 32.8vw;
+  width: 33.3%;
   /* border: 4px white solid; */
-  height: 50vh;
+  height: 400px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .friends {
+    width: 50%;
+  }
 }
 
 .video {
@@ -104,7 +143,7 @@ section {
   justify-content: center;
   background-image: url(./images/beautiful-demi.jpg);
   background-size: cover;
-  border-bottom: 4px white solid;
+  border-bottom: 4px black solid;
 }
 
 /* heart */
@@ -167,5 +206,23 @@ section {
   }
   50%, 75% {
     transform: translateY(50%);
+  }
+}
+
+.final {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/beautiful.jpg');
+  background-size: cover;
+  height: 1600px;
+  border-bottom: 4px black solid;
+}
+
+
+@media screen and (max-width: 600px) {
+  .final {
+    height: 1000px;
   }
 }
