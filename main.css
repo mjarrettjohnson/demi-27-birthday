@@ -1,0 +1,71 @@
+
+body,html {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.container {
+  box-sizing: border-box;
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/squid.jpg');
+  background-size: cover;
+  height: 1200px;
+  border-bottom: 4px white solid;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 140px;
+  z-index: 3;
+}
+
+.intro-2 {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  height: inherit;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#love-title {
+  position: absolute;
+  top: 430px;
+  left: 140px;
+}
+
+
+.friends {
+  width: 32.8vw;
+  /* border: 4px white solid; */
+  height: 50vh;
+  object-fit: cover;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+}
